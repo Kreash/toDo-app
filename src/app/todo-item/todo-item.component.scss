@@ -1,0 +1,46 @@
+
+
+.todoItem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    display: flex;
+
+
+    border-bottom: solid;
+
+
+
+}
+
+
+.field, .field-editing {
+    flex-grow: 1;
+    padding: 0;
+}
+
+.field-editing {
+    height: 20px;
+}
+
+
+.button {
+    width: 130px;
+    font-family: 'Underdog', cursive;
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    color: #a43604;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+
+.button:hover{
+    color: #ffffff;
+    background: #eb8b35;
+    box-shadow: 0 0 2px #eb8b35, 0 0 4px #eb8b35, 0 0 6px #eb8b35;
+}

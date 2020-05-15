@@ -1,0 +1,17 @@
+
+
+<div class="todoItem">
+    <input class="checkbox" type="checkbox" name="" id="">
+    <label *ngIf="!toggle; else fieldEd" class="field">{{task.title}}</label>
+
+    <ng-template #fieldEd>
+      <input class="field-editing" type="text" (keyup.enter)="toggle=!toggle" [(ngModel)]="task.title">
+    </ng-template>
+
+    <input *ngIf="!toggle; else buttonValue" (click)="toggle=!toggle" class="button" type="button" value="Изменить">
+    <ng-template #buttonValue>
+        <input (click)="toggle=!toggle" class="button" type="button" value="Сохранить">
+    </ng-template>
+
+    <input class="button" type="button" value="Удалить">
+</div>

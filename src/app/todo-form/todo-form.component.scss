@@ -1,0 +1,42 @@
+
+.todoForm {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.field {
+    flex-grow: 1;
+    color: #161f21;
+    //display: none;
+}
+
+
+.button {
+    width: 130px;
+    font-family: 'Underdog', cursive;
+    position: relative;
+    display: inline-block;
+    padding: 0px 10px;
+    color: #a43604;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+
+.button:hover{
+    color: #ffffff;
+    background: #eb8b35;
+    box-shadow: 0 0 2px #eb8b35, 0 0 4px #eb8b35, 0 0 6px #eb8b35;
+}
+
+
+.field-form {
+    flex-grow: 1;
+    font-family: 'Stalinist One', sans-serif;
+    font-size: 14px;
+}
