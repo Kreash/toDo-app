@@ -12,12 +12,11 @@ export class TodoFormComponent implements OnInit {
 
   title = "";
 
-
-
   addTask(){
     if(this.title.trim()){
       const task: Task = {
-        title: this.title
+        title: this.title,
+        id: 1
       }
       this.addTaskApp.emit(task);
       this.title = "";

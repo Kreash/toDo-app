@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 export interface Task {
   title: string;
+  id?: number;
 }
 
 
@@ -18,16 +19,17 @@ export class AppComponent {
   currentForm: string = 'Первая задача';
 
   tasks: Task[] = [
-    {title: "Первая задача"},
-    {title: "Вторая задача"},
-    {title: "Третья задача"}
+    {title: "Первая задача", id: 0},
+    {title: "Вторая задача", id: 1},
+    {title: "Третья задача", id: 2}
   ]
 
   addTaskApp(task){
     this.tasks.push(task);
   }
 
-
-
-
+  deleteTask(inx) {
+    this.tasks.splice(inx, 1);
+    console.log(inx)
+  }
 }

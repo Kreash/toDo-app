@@ -1,5 +1,5 @@
 import { Task } from './../app.component';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-todo-item',
@@ -9,18 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TodoItemComponent implements OnInit {
 
   @Input() task: Task;
+  @Output() deleteTask = new EventEmitter;
 
   toggle: boolean;
 
-  toDelete(){
-    
+  deleteItem(){
+    this.deleteTask.emit();
   }
-
-  
-
-  
-
-
 
   constructor() { }
 

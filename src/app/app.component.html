@@ -7,6 +7,7 @@
   <app-todo-item
     *ngFor="let task of tasks; let inx = index"
     [task]="task"
+    (deleteTask)="deleteTask(inx)"
     class="todoAppChild">
   </app-todo-item>
 
