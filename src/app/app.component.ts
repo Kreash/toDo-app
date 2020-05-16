@@ -30,6 +30,5 @@ export class AppComponent {
 
   deleteTask(inx) {
     this.tasks.splice(inx, 1);
-    console.log(inx)
   }
 }
