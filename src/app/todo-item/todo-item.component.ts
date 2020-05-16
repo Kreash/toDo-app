@@ -12,7 +12,9 @@ export class TodoItemComponent implements OnInit {
 
   toggle: boolean;
 
-
+  toDelete(){
+    
+  }
 
   
 

@@ -1,6 +1,6 @@
 
   <div class="todoForm">
-    <input class="field-form" type="text" [(ngModel)]="title">
+    <input (keydown.enter)="addTask()" class="field-form" type="text" [(ngModel)]="title">
     <input (click)="addTask()" class="button" type="button" value="Добавить">
   </div>
   

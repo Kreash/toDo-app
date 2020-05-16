@@ -1,5 +1,3 @@
-
-
 <div class="todoItem">
     <input class="checkbox" type="checkbox" name="" id="">
     <label *ngIf="!toggle; else fieldEd" class="field">{{task.title}}</label>
@@ -13,5 +11,5 @@
         <input (click)="toggle=!toggle" class="button" type="button" value="Сохранить">
     </ng-template>
 
-    <input class="button" type="button" value="Удалить">
+    <input (click)="toDelete()" class="button" type="button" value="Удалить">
 </div>
